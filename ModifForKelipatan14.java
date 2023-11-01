@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ForKelipatan14 {
+public class ModifForKelipatan14 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int kelipatan, total = 0, counter = 0;
@@ -12,11 +12,13 @@ public class ForKelipatan14 {
             if (i % kelipatan == 0) {
                 total += i;
                 counter++;
-
             }
         }
-        System.out.printf("Banyaknya bilangan %d dari 1 sampai 50 adalah %d\n", kelipatan, counter);
-        System.out.printf("Total bilangan lkelipatan %d dari 1 sampai 50 adalah %d\n", kelipatan, total);
-    }
 
+        double rataRata = (double) total / counter; // Menghitung rata-rata
+
+        System.out.printf("Banyaknya bilangan %d dari 1 sampai 50 adalah %d\n", kelipatan, counter);
+        System.out.printf("Total bilangan kelipatan %d dari 1 sampai 50 adalah %d\n", kelipatan, total);
+        System.out.printf("Rata-rata bilangan kelipatan %d dari 1 sampai 50 adalah %.2f\n", kelipatan, rataRata);
+    }
 }
